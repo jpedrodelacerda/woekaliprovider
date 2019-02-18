@@ -1,5 +1,0 @@
----
-kali_version: 2018.4
-vm_provider:
-  name: vbox # vbox || vm
-  ext: ova # vbox = ova || vm = 7z

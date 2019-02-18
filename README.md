@@ -10,11 +10,8 @@ Simple kali-vm provider for Windows.
 
 Available variables are:
 - ``` kali_version ``` version or release
-- ```
-	vm_provider:
-	  name: 
-	  ext:
-```   virtual machine provider: { vbox,ova } or { vm,7z }
+- ``` vm_provider.name: ``` vbox || vm
+- ``` vm_provider.ext: ``` vbox = ova || vm = 7z
 
 ## Dependencies ##
 
