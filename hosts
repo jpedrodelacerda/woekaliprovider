@@ -1,0 +1,5 @@
+[wintarget]
+<ip>
+
+[wintarget:vars]
+ansible_user=user ansible_password=passwd

@@ -1,0 +1,5 @@
+---
+- hosts: wintarget
+  gather_facts: yes
+  roles:
+   - kaliprovider

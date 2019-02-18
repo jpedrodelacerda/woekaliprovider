@@ -1,0 +1,13 @@
+---
+- name: Download do kali.ova
+  get_url:
+    url: https://images.offensive-security.com/virtual-images/kali-linux-{{ kali_version }}-{{ vm_provider.name }}-amd64.{{ vm_provider.ext }}
+    dest: /tmp/
+    mode: 0755
+  become: yes
+  delegate_to: localhost
+
+- name: Copiando o arquivo vbox para as máquinas alvo
+  win_copy:
+    src: /tmp/kali-linux-{{ kali_version }}-{{ vm_provider.name }}-amd64.{{ vm_provider.ext }}
+    dest: C:\Users\Aulas\Documents\
