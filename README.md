@@ -26,3 +26,7 @@ None.
 - hosts: all
   roles:
 	- kaliprovider
+```
+
+## License ##
+MIT / BSD
